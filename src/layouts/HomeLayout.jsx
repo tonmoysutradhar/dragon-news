@@ -2,6 +2,7 @@ import React from 'react';
 import Header from '../components/Header';
 import LatestNews from '../components/LatestNews';
 import Navbar from '../components/Navbar';
+import LeftNavbar from '../components/layout-component/LeftNavbar';
 
 const HomeLayout = () => {
     return (
@@ -17,7 +18,7 @@ const HomeLayout = () => {
             </nav>
             <main className='grid grid-cols-12 gap-4'>
                 <aside className='col-span-3'>
-                    left
+                    <LeftNavbar></LeftNavbar>
                 </aside>
                 <section className='col-span-6'>
                     main content
