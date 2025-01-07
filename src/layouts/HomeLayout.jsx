@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from '../components/Header';
 import LatestNews from '../components/LatestNews';
+import Navbar from '../components/Navbar';
 
 const HomeLayout = () => {
     return (
@@ -11,8 +12,20 @@ const HomeLayout = () => {
                     <LatestNews></LatestNews>
                 </section>
             </header>
-            <nav></nav>
-            <main></main>
+            <nav className='py-5'>
+                <Navbar></Navbar>
+            </nav>
+            <main className='grid grid-cols-12 gap-4'>
+                <aside className='col-span-3'>
+                    left
+                </aside>
+                <section className='col-span-6'>
+                    main content
+                </section>
+                <aside className='col-span-3'>
+                    right
+                </aside>
+            </main>
         </div>
     );
 };
