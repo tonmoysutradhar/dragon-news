@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import userIcon from "../assets/user.png"
 
 const Navbar = () => {
@@ -17,7 +17,7 @@ const Navbar = () => {
                 <div>
                     <img src={userIcon} alt="user" />
                 </div>
-                <button className='btn btn-neutral rounded-none'>Login</button>
+                <Link to="/auth/login" className='btn btn-neutral rounded-none'>Login</Link>
             </div>
         </div>
     );
