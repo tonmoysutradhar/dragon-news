@@ -1,5 +1,6 @@
 import React from "react";
 import { FaRegBookmark, FaShareAlt } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const NewsCard = ({ singleNews }) => {
   console.log(singleNews);
@@ -36,7 +37,7 @@ const NewsCard = ({ singleNews }) => {
       <h2 className="text-lg font-semibold mb-2">{singleNews.title}</h2>
       <p className="text-gray-500 text-sm mb-4">
         {singleNews.details.slice(0, 100)}...
-        <span className="text-blue-500 cursor-pointer"> Read More</span>
+        <Link to={`/news/${singleNews._id}`} className="text-blue-500 cursor-pointer"> Read More</Link>
       </p>
 
       {/* Footer */}
