@@ -3,7 +3,7 @@ import { FaRegBookmark, FaShareAlt } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 const NewsCard = ({ singleNews }) => {
-  console.log(singleNews);
+  // console.log(singleNews);
 
   return (
     <div className="card bg-white shadow-lg rounded-lg p-4">
